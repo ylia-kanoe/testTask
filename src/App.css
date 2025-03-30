@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #eef2f6;
   font-family: "Roboto", sans-serif;
   color: rgb(54, 65, 82);
@@ -6,9 +6,78 @@ body{
   padding: 0;
 }
 
-.container{
+.container {
   margin: 0 auto;
   max-width: 1440px;
   background-color: #ffffff;
   border-radius: 8px;
+}
+
+
+@media screen and (max-width: 764px) {
+  .dashboardElem {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .userListItemsTop {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tableUsers td:first-child,
+  .tableUsers td:nth-child(3),
+  .tableUsers td:nth-child(4),
+  .tableUsers td:nth-child(5),
+  .tableUsers td:nth-child(6),
+  .tableUsers td:nth-child(7) {
+    display: none;
+  }
+
+  .tableUsers th:first-child,
+  .tableUsers th:nth-child(3),
+  .tableUsers th:nth-child(4),
+  .tableUsers th:nth-child(5),
+  .tableUsers th:nth-child(6),
+  .tableUsers th:nth-child(7) {
+    display: none;
+  }
+
+  td.clickTd a {
+    font-size: 10px;
+  }
+
+  .tableUsers td {
+    padding: 10px;
+  }
+
+  .tableUsers td.clickTd {
+    padding: 0;
+  }
+
+  .userListItems .pagination {
+    padding: 24px 0;
+  }
+
+  .userListItems .paginationItems {
+    gap: 0px;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profilePicture,
+  .profileInfo {
+    width: 100%;
+  }
+
+  .formElementsGroup {
+    flex-direction: column;
+  }
 }
