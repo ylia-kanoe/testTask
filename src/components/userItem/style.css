@@ -1,0 +1,10 @@
+.userItem {
+    margin: 24px auto 50px;
+}
+
+.userItemTop {
+    margin: 24px auto 0;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,108 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.paginationSection {
+    display: flex;
+    align-items: center;
+}
+
+.paginationItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.paginationItem {
+    list-style: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.paginationItem:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.paginationItem.active {
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+}
+
+.paginationItem p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.nextPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.nextPage:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.nextPage.disabled {
+    opacity: 0.38;
+    pointer-events: none;
+    cursor: default;
+}
+
+.nextPage svg {
+    width: 20px;
+    height: 20px;
+}
+
+.activeCountRows {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.activeCountRows svg {
+    width: 30px;
+}
+
+.checkCountPage {
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 0;
+    color: rgb(54, 65, 82);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+}
+
+.checkCountPageItem {
+    list-style: none;
+    padding: 3px 10px;
+    white-space: nowrap;
+    text-align: right;
+    cursor: pointer;
+}
+
+.activeCountRows:hover .checkCountPage {
+    display: block;
+}

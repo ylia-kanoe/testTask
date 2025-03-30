@@ -1,0 +1,29 @@
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.breadcrumbsItem {
+    list-style: none;
+    color: rgb(105, 117, 134);
+    margin: 0 6px;
+    display: flex;
+}
+
+.breadcrumbsItem a {
+    text-decoration: none;
+    color: rgb(105, 117, 134);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+}
+
+.breadcrumbsItem svg {
+    margin-right: 0px;
+    margin-top: -2px;
+    width: 1rem;
+    height: 1rem;
+    color: rgb(103, 58, 183);
+}

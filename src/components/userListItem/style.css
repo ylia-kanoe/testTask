@@ -1,0 +1,56 @@
+.minProfile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+}
+
+.minProfile p {
+    margin: 0;
+}
+.minProfile .name{
+    font-weight: 500;
+    font-size: 14;    
+    line-height: 1.75;
+} 
+.minProfile .email {
+    font-weight: 400;
+    color: rgb(105, 117, 134);
+    font-size: 12px;
+}
+.minProfile .minInfo{
+    
+    position: relative;
+}
+.minProfile .gender {
+    background-color: green;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.minProfile .gender p{
+    margin: 0;
+}
+
+.tableUsers .clickTd{
+    font-weight: 500;
+    color: rgb(18, 25, 38);
+    cursor: pointer;
+}
+.tableUsers .clickTd a{
+    text-decoration: none;
+    color: rgb(18, 25, 38);
+
+}
+
+.tableUsers tbody .userListItem:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
