@@ -1,25 +1,17 @@
 import { useState } from "react"
 import { UserInfo } from "../userInfo"
+import { generateRandomColor } from '../support/generateColor';
 import './style.css'
 
 export function UserListItem(props) {
     const [showInfo, setShowInfo] = useState(false)
-
-    function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
 
     return (
         <>
             <tr className="userListItem">
                 <td>{props.user.id}</td>
                 <td className="minProfile">
-                    <img width={40} height={40} src={props.user.image} style={{ backgroundColor: getRandomColor() }} />
+                    <img width={40} height={40} src={props.user.image} style={{ backgroundColor: generateRandomColor() }} />
                     <div className="minInfo">
                         <p className="name">{props.user.first_name} {props.user.last_name}</p>
                         <p className="email">{props.user.email}</p>

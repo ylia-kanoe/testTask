@@ -10,8 +10,213 @@
 }
 
 .dashboard {
-    background-color: #ffffff;
     border-radius: 8px;
     max-width: 1440px;
     margin: 24px auto 50px;
+    padding: 0 24px;
+}
+
+.dashboardBlock {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+.dashboardElem {
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 18px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dashboardElem .title {
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.textLarge {
+    margin: 14px 8px 6px 0px;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.dashboardPurple {
+    background-color: rgb(94, 53, 177);
+}
+
+.dashboardPurple .title {
+    color: rgb(179, 157, 219);
+}
+
+.dashboardBlue {
+    background-color: rgb(30, 136, 229);
+    ;
+}
+
+.dashboardBlue .title {
+    color: rgb(144, 202, 249);
+}
+
+
+
+.dashboardSvg {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardSvg svg {
+    width: 24px;
+    height: 24px;
+}
+
+.dashboardPurple .dashboardSvg {
+    background-color: rgb(69, 39, 160);
+}
+
+.dashboardBlue .dashboardSvg {
+    background-color: rgb(21, 101, 192);
+}
+
+.dashboardElem:before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -125px;
+    right: -15px;
+}
+
+.dashboardElem:after {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    top: -85px;
+    right: -95px;
+}
+
+.dashboardPurple:before {
+    background: rgb(69, 39, 160);
+}
+
+.dashboardPurple:after {
+    background: rgb(69, 39, 160);
+}
+
+.dashboardBlue:before {
+    background: rgb(21, 101, 192);
+}
+
+.dashboardBlue:after {
+    background: rgb(21, 101, 192);
+}
+
+.dashboardYellow {
+    background-color: #ffffff;
+}
+
+.dashboardYellow .dashboardSvg {
+    background-color: rgb(255, 248, 225);
+}
+
+.dashboardYellow .textLarge a,
+.dashboardYellow .textLarge {
+    color: #000000;
+    text-decoration: none;
+}
+
+.dashboardYellow .title {
+    color: rgb(105, 117, 134);
+}
+
+.dashboardYellow:before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(140.9deg, rgb(255, 193, 7) -14.02%, rgba(144, 202, 249, 0) 70.5%);
+    border-radius: 50%;
+    top: -133px;
+    right: -113px;
+}
+
+.dashboardYellow:after {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(210.04deg, rgb(255, 193, 7) -50.94%, rgba(144, 202, 249, 0) 83.49%);
+    border-radius: 50%;
+    top: -3px;
+    right: -159px;
+}
+
+.textSmall {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(105, 117, 134);
+    font-family: Roboto, sans-serif;
+    line-height: 1.57;
+}
+
+.textNormal {
+    font-size: 16px;
+    color: rgb(18, 25, 38);
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    line-height: 1.235;
+}
+
+.dashboardWhite {
+    background-color: #ffffff;
+}
+
+.dashboardDiagramBar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 24px;
+}
+
+.dashboardDiagramCircle {
+    padding: 24px;
+}
+
+.dashboardDiagramBar canvas {
+    width: 100%;
+}
+
+.dashboardDiagramLine {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 24px;
+}
+
+.dashboardDiagramLine canvas {
+    width: 100%;
+}
+
+.dashboardDiagramBar .textSmall,
+.dashboardDiagramLine .textSmall {
+    margin-bottom: 15px;
+}
+
+.dashboardDiagramCircle .textNormal {
+
+    margin-bottom: 30px;
 }
